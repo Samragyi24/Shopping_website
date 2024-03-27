@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collection-item {
+    transition: background-size 0.3s ease; /* Smooth transition */
+    background-size: 100%;
+}
+
+.collection-item:hover {
+    background-size: 105%; /* Scale background image on hover */
+  }
+  
+  #image-box:hover {
+      #icon-box {
+        display: flex
+      };
+  }
+
+  #product-box {
+    display: flex !important;
+  }
+
+.slick-slide div {
+    margin: 5px;
+}
+
+#blogs-slider .slick-slide div {
+    margin: 10px;
+}
+
+.slick-arrow:before {
+    color: red;
+    font-size: 50px;
+}
+
+.slick-prev {
+    top: -60px;
+    left: 1220px;
+}
+
+.slick-next {
+    right: 40px;
+    top: -60px;
+}
+
+.slick-arrow {
+    padding: 10px;
+    font-size: 30px;
+}
+
+#blogs-slider .slick-next {
+    right: 58px;
+    top: -60px;
+}
+
+#blogs-slider .slick-prev {
+    top: -60px;
+    left: 1210px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slick-arrow:before {
+        display: none;
+    }
+
+    .slick-next {
+        right: 0px;
+        top: 0px;
+        display: none;
+    }
+    
+    .slick-next {
+        right: 0px;
+        top: 0px;
+        display: none;
+    }  
+}
